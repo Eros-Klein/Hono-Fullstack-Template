@@ -2,7 +2,7 @@
   "name": "mine",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"tsx watch server/index.ts\" \"tsc --watch client/index.ts\"",
+    "dev": "concurrently \"tsx watch server/index.ts\" \"tsc --watch --project client/tsconfig.json\"",
     "build": "tsc",
     "start": "node dist/index.js"
   },
