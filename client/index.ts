@@ -1,5 +1,5 @@
 import type { HelloResponse } from '../types/model.js'
-import { getDefaultTheme } from './defaults/theme.js'
+import { getDefaultTheme, getSystemTheme } from './defaults/theme.js'
 
 const messageContainer = document.getElementById('message-container')!
 
