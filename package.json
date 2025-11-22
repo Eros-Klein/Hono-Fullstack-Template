@@ -1,0 +1,19 @@
+{
+  "name": "mine",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"tsx watch src/index.ts\" \"tsc --watch static/index.ts\"",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.6",
+    "hono": "^4.10.6",
+    "concurrently": "^9.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
