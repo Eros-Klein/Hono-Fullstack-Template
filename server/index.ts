@@ -15,10 +15,10 @@ app.get('/api', (c) => {
 app.get('/*', (c) => {
   const reqPath = c.req.path === '/' ? '' : c.req.path.replace(/^\//, '');
   if (!reqPath) {
-    return c.html(fs.readFileSync('static/index.html', 'utf8'));
+    return c.html(fs.readFileSync(path.join('client', 'index.html'), 'utf8'));
   }
 
-  const filePath = path.join('static', reqPath);
+  const filePath = path.join('client', reqPath);
   const ext = path.extname(filePath);
   const content = fs.readFileSync(filePath, 'utf8');
 
