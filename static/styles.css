@@ -3,10 +3,28 @@
     font-family: Arial, sans-serif;
 }
 
+:root[data-theme="light"] {
+    --text: #080c11;
+    --background: #f0f3f9;
+    --primary: #487ac7;
+    --secondary: #8fb2e5;
+    --accent: #5d95e5;
+}
+
+:root[data-theme="dark"] {
+    --text: #eef2f7;
+    --background: #06090f;
+    --primary: #386bb7;
+    --secondary: #1a3c70;
+    --accent: #1a53a2;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .container {
